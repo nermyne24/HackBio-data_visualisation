@@ -1,0 +1,11 @@
+radius_mean
+
+The variable radius_mean represents the average distance from the center of a cell nucleus to its boundary. It is a direct indicator of cell size. Larger radius values correspond to larger nuclei, which are commonly associated with malignant tumors due to uncontrolled cell growth. Therefore, an increase in radius_mean generally reflects a higher likelihood of malignancy.
+
+texture_mean
+
+The variable texture_mean measures the variation in gray-level intensity within the nucleus, which reflects how heterogeneous or irregular the nuclear surface appears in medical imaging. Higher texture values indicate greater variability and roughness, characteristics that are often observed in malignant tumors because cancer cells tend to have abnormal and disorganized internal structures.
+
+🔗 Combined Influence on Diagnosis
+
+When considered together, radius_mean and texture_mean provide complementary information about tumor morphology. Tumors with large nuclear size (high radius_mean) and high structural irregularity (high texture_mean) are more likely to be malignant. The scatter plot demonstrates that using both features simultaneously improves visual separation between benign and malignant tumors, highlighting their importance in exploratory data analysis and potential classification models.
