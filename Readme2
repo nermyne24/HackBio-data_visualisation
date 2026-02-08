@@ -1,0 +1,62 @@
+X-axis: log2FoldChange
+
+Why we use it:
+
+log2FoldChange tells us how much a gene’s expression changes between conditions.
+
+Positive → upregulated in your experimental condition
+
+Negative → downregulated
+
+Why log2?
+
+Gene expression changes are often very large (10x, 100x)
+
+Log2 scales the data so fold-changes are symmetrical around 0:
+
++1 → 2× up
+
+−1 → 2× down
+
+Makes the plot easier to interpret visually.
+
+Biological meaning:
+
+Genes far to the left or right have strong expression changes
+
+Genes near 0 → no real change
+
+2️⃣ Y-axis: -log10(PAdj)
+
+Why we use it:
+
+PAdj = adjusted p-value → statistical significance
+
+Small p-values → very significant
+
+Plotting -log10(PAdj) flips it: small p-value → large y-value
+
+Example:
+
+PAdj	-log10(PAdj)
+
+
+Now “more significant genes” appear higher on the plot.
+
+Biological meaning:
+
+Genes at the top are most reliably differentially expressed
+
+Genes at the bottom → may have large fold change but not statistically reliable
+
+3️⃣ Are these axes “always like this”?
+
+For volcano plots: yes, x = log2FC, y = -log10(PAdj) is standard
+
+Sometimes people tweak the y-axis:
+
+Use -log10(PValue) instead of adjusted p-value
+
+Or change log base for extreme ranges
+
+The concept remains the same: x = magnitude, y = significance
