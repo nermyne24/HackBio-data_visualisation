@@ -1,0 +1,10 @@
+The correlation heatmap shows extremely strong positive correlations among radius_mean, perimeter_mean, and area_mean, indicating that these features all describe tumor size. Texture_mean exhibits only weak to moderate correlation with size-related features, suggesting that it provides independent information about the tumor’s internal structure. Smoothness_mean and compactness_mean are moderately to strongly correlated with each other but weakly correlated with size, reflecting their role in describing tumor boundary irregularity. Overall, the heatmap reveals that some features are redundant (size-related) while others provide complementary information, which is important for classification or predictive modeling
+Tumor size features (radius_mean, perimeter_mean, area_mean) are highly correlated
+
+Can sometimes be reduced to one feature in analysis
+
+Texture adds independent information
+
+Smoothness & compactness describe shape and irregularity, useful for diagnosis
+
+Multicollinearity is present among size features → important if you plan to build predictive models
