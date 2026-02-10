@@ -1,0 +1,8 @@
+The scatter plot displays the relationship between compactness_mean (x-axis) and smoothness_mean (y-axis) for breast tumor samples, with points colored according to their diagnosis (benign or malignant). Each point represents one tumor, and its position reflects the shape and boundary characteristics of the tumor.
+
+Compactness_mean measures how dense and irregular the tumor boundary is. Higher values indicate more compact and irregular tumor shapes.
+
+Smoothness_mean measures the smoothness of the tumor boundary. Lower values indicate rougher, more irregular edges.
+Biological Meaning and Influence
+
+Together, compactness_mean and smoothness_mean describe tumor boundary morphology rather than tumor size. Tumors with high compactness and reduced smoothness are more likely to be malignant because cancer growth often leads to irregular, poorly defined edges. This plot therefore highlights how shape-related features can contribute to distinguishing malignant from benign tumors.
